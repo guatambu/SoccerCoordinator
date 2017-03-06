@@ -13,6 +13,22 @@
  
     Guatambu
  
+    UPDATE NOTE (if you have time):  Thanks so much for your insightful comments.  a fella can't get be upset about not passing when it's constructuve like this.  so i am going to tackle your ideas.  
+ 
+ 
+        one things i wanted to mention before diving in per your comment:
+ 
+            *** "An alternate approach that can be used would be simply create two collections, one for experienced players, another for inexperienced players, and iterate through it to do the assignment. It is similar to yours but basically break it down into two steps."
+ 
+        what i was trying to do was make this a universal application.  in that, i was envisioning a parent with no programmng abilities to use this.  the scenario further being that say another 6 kids signed up with varying experience, and then that parent would have to sort but not get called out for playing favorites or something.  so i was trying to make it "blind".
+        i even thought about including a random generator for each player, experienced or not, so that the sorting would be totally independent of the parent generating the teams. but i wasn't sure if that was allowed since we didn't cover those tools like the 'random' and 'round'.  then using their random scores in addition to the experience to see who goes to what team.
+        anyway, just some insight into what i was thinking about if that's of interest to you all.
+        
+        Cheers and Thanks again,
+ 
+        Guatambu
+ 
+ 
 */
 
 
