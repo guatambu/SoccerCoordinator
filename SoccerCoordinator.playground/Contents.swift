@@ -172,10 +172,32 @@ let player18 = [
     ]
 
 
-// Lastly, for the organization and set up, we need our array of dictionaries
+// Lastly, for the organization and set up, we need our array of dictionaries for a fair shot at randomness.
+// Essentially trying to make it anonymous.
 
 let players = [player1, player2, player3, player4, player5, player6, player7, player8, player9, player10, player11, player12, player13, player14, player15, player16, player17, player18]
 
+
+// From here, let's sort the players into two macro groups... with experience and without experience
+// (again the goal is a measure of blind sorting for fairness)
+
+var yesExperienceArray = [Dictionary<String, String>]()
+
+var noExperienceArray = [Dictionary<String, String>]()
+
+func experienceSorter() {
+    for player in players {
+        if (player["Soccer Experience"]) == "yes" {
+            yesExperienceArray.append(player)
+        } else if (player["Soccer Experience"]) == "no" {
+            noExperienceArray.append(player)
+        }
+    }
+    print("Experienced Players: \(yesExperienceArray)")
+    print("Players with NO Experience: \(noExperienceArray)")
+}
+
+experienceSorter()
 
 //Next up, empty arrays for the various kids' soccer teams, so we can sort the team members accordingly
 
@@ -312,7 +334,7 @@ func letterPrinter() {
 
 soccerLeagueLetterComposer()
 
-letterPrinter()
+// letterPrinter()
 
 
 
